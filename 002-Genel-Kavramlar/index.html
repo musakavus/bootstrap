@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap - Row ve Col</title>
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-4 bg-warning">Lorem ipsum dolor.</div>
+        <div class="col-4 bg-primary">Adipisci, aspernatur, earum.</div>
+        <div class="col-4 bg-success">Consectetur impedit, velit.</div>
+    </div>
+
+    <!-- row içerisinde row olsa bile yeni row 12x birim üzerinden değerlendirilir unutma-->
+    <div class="row bg-primary">
+        <div class="col-4 bg-success">
+            <p>Col-1-1</p>
+        </div>
+        <div class="col-8 bg-info">
+            <div class="row">
+                <div class="col-6"><p>Col2-1</p></div>
+                <div class="col-6"><p>Col2-2</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3" style="background-color: red"> <!-- 3k -->
+            <p>lorem1</p>
+        </div>
+        <div class="col" style="background-color: rebeccapurple"> <!-- 12k  -->
+            <div class="row">
+                <div class="col-4">Lorem ipsum dolor.</div> <!--     4x           -->
+                <div class="col-4">Est, modi, nam.</div><!--     4x           -->
+                <div class="col-4">Dolores, eos, quibusdam.</div><!--     4x           -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
