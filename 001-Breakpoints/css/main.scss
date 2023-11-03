@@ -1,0 +1,20 @@
+// import bootstrap
+$primary: red;
+
+@media (max-width: 576px) {
+  /* 'xs' breakpoint için stil tanımları */
+  div.musa{
+    display: block;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  div.musa{
+    display: none;
+  }
+
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
