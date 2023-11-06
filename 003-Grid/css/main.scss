@@ -1,6 +1,17 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 
 $primary: #e74c3c;
 $secondary: #8e44ad;
 $warning: #f1c40f;
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+.element {  //yeni sınıf tanımladık
+  @include row-cols(3);
+  // Başlangıçta üç sütun
+
+
+  // Geniş kesitten (xl) itibaren iki sütun
+  @include media-breakpoint-up(xl){
+    @include row-cols(2)
+  }
+}

@@ -85,6 +85,65 @@ Bu grid sistemi, içeriğin esnek bir şekilde düzenlenmesine ve tamamen respon
         -->
     </div>
 
+    <!--  
+    Row's Column
+      Burda satırı da da kolonlaştırdık. Ve satırı ikiye ayırdık
+      
+      -->
+
+    <div class="row row-cols-2 mt-5"> <!-- row'lar 2'li collardan oluşuyor demek -->
+        <p>Row's Column</p>
+        <div class="col-9 bg-primary">Lorem1</div>
+        <div class="col-3 bg-info">Lorem2</div>
+        <div class="col bg-secondary">Lorem3</div>
+        <div class="col bg-warning">Lorem4</div>
+    </div>
+
+    <div class="row row-cols-3 mt-5 text-center">
+        <div class="col bg-warning">Lorem.</div>
+        <div class="col bg-secondary">Culpa?</div>
+        <div class="col bg-info">Magnam?</div>
+        <div class="col bg-danger">Provident?</div>
+    </div>
+
+    <div class="row row-cols-auto mt-5">
+        <div class="col bg-danger">Lorem.</div>
+        <div class="col bg-info">At?</div>
+        <div class="col bg-secondary">Nemo?</div>
+        <div class="col bg-primary">Voluptatum.</div>
+        <div class="col bg-warning">Voluptatum.</div>
+    </div>
+
+    <div class="container text-center mt-5">
+        <div class="row row-cols-4">
+            <div class="col bg-warning">Column</div>
+            <div class="col bg-primary">Column</div>
+            <div class="col-6 bg-secondary">Column</div>
+            <div class="col bg-danger">Column</div>
+        </div>
+    </div>
+
+    <div class="row row-cols-3 row-cols-lg-2 text-center mt-5">
+        <!--
+        lgDen önce 3'lü col, lgden sonra 2'li col
+        -->
+        <div class="col bg-warning">Lorem1</div>
+        <div class="col bg-secondary">Lorem2</div>
+        <div class="col bg-primary">Lorem3</div>
+        <div class="col bg-info">Lorem4</div>
+    </div>
+
+
+    <div class="row element mt-5"> <!--   Burda element main.scss dosyasında oluşturulan sınıfın ismini alıyor     -->
+        <div class="col bg-info">Lorem.</div>
+        <div class="col bg-primary">Eaque?</div>
+        <div class="col bg-secondary">Soluta?</div>
+        <div class="col bg-warning">Nesciunt?</div>
+        <div class="col bg-danger">Explicabo?</div>
+        <div class="col bg-secondary-subtle">Eligendi!</div>
+        <div class="col bg-info-subtle">Laudantium.</div>
+    </div>
+
 
 </div>
 </body>
