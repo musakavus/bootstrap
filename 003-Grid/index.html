@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap - Grid</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!--
+
+12 İki Sütunlu Sistem: Grid sistemi, varsayılan olarak on iki sütunlu bir yapıya sahiptir.
+Bu, sayfanızı on iki eşit veya farklı genişlikte sütunlara bölmek için kullanabilirsiniz.
+Bu sütunlar, içeriği düzenlemek için temel birimlerdir.
+
+-->
+
+<!--
+
+Bootstrap'un grid sistemi, içeriği düzenlemek ve hizalamak için bir dizi container (kutu),
+row (sıra) ve column (sütun) kullanır.
+Bu grid sistemi, içeriğin esnek bir şekilde düzenlenmesine ve tamamen responsive (duyarlı) olmasına olanak tanır
+
+-->
+<div class="container-xl"> <!--  xl ve sonrası container  -->
+    <div class="row bg-primary">
+        <div class="col border border-1 text-center">COL-1</div>
+        <div class="col border border-1 text-center">COL-1</div>
+        <div class="col border border-1 text-center">COL-1</div>
+    </div>
+
+
+    <div class="row bg-secondary mt-5">
+        <div class="col-3 border border-1 text-center text-white">COL-3</div>
+        <div class="col-6 border border-1 text-center text-white">COL-6</div>
+        <div class="col-3 border border-1 text-center text-white">COL-3</div>
+    </div>
+
+    <div class="row bg-warning mt-5">
+        <div class="col-sm col-xl-3 border border-1 text-center text-white">COL-3</div>
+        <div class="col-sm col-xl-6 border border-1 text-center text-white">COL-6</div>
+        <div class="col-sm col-xl-3 border border-1 text-center text-white">COL-3</div>
+    </div>
+    <!--
+    Extra small (xs): Bu kesitte grid sistemi kapalıdır, yani içeriği düz bir şekilde gösterir.
+    -->
+
+
+    <div class="row">
+        <div class="col border border-1 text-center">
+            MERHABA
+        </div>
+        <div class="col-md-auto border border-1 text-center">
+            MERHABA
+            <!--
+            md-auto derken md ve sonrasında içeriğin kendisi kadar yer kapla anlamına gelir
+            -->
+        </div>
+        <div class="col border border-1 text-center">
+            MERHABA
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-4  bg-primary">Lorem</div>
+        <div class="col-md-auto bg-secondary">Itaque</div>
+        <div class="col-4 bg-info">Molestias</div>
+    </div>
+
+
+    <div class="row mt-5 text-center">
+        <div class="col-sm-8 col-md-8 col-lg-2 col-xl-2 col-xxl-auto bg-primary">Lorem1</div>
+        <div class="col-sm-2 col-md-2 col-lg-8 col-xl-2 col-xxl-auto bg-secondary">Lorem2</div>
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-8 col-xxl bg-warning">Lorem3</div>
+    </div>
+
+
+    <div class="row mt-5">
+        <div class="col-sm-12 col-lg-4 bg-info">col-sm-12</div>
+        <div class="col-sm-6 col-lg-4 bg-danger">Ipsum.</div>
+        <div class="col-sm-6 col-lg-4 bg-primary">Modi.</div>
+        <!--
+        Bazı grid kesitlerinde sütunlarınızın sadece yığılmasını istemiyorsanız,
+        ihtiyaca göre her kesit için farklı sınıfların bir kombinasyonunu kullanabilirsiniz.
+        -->
+    </div>
+
+
+</div>
+</body>
+</html>
