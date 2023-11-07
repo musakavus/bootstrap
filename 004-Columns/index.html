@@ -170,6 +170,75 @@ Yani sütunların içeriği an aşağıda başlar.
 
     <div class="mt-5"></div>
 
+    <div class="row">
+        <!--
+        .offset-md-4: Bu sınıf, bir sütunu belirtilen kesitte sağa doğru kaydırır. Yani .col-md-4 .offset-md-4 sınıfı,
+        ilk sütunu 4 sütun genişliğinde kaydırır.-->
+        <div class="col-4 bg-primary">Lorem.</div>
+        <div class="col-4 offset-4 bg-secondary">Delectus.</div>
+        <div class="col-4 bg-info">Exercitationem.</div>
+    </div>
+
+    <div class="mt-5"></div>
+
+    <div class="row">
+        <div class="col-4 bg-primary me-auto">Lorem.</div>
+        <div class="col-4 bg-secondary">Consequuntur!</div>
+    </div>
+
+    <div class="mt-5"></div>
+
+    <div class="row">
+        <!--
+        Bootstrap 4'te flexbox kullanılırken, .me-auto gibi kenar boşluğu yardımcı sınıflarını kullanabilirsiniz.
+        Bu sınıflar, kardeş sütunları birbirinden uzaklaştırmak için kullanışlıdır.-->
+        <div class="col-4 bg-primary me-auto">Lorem.</div>
+        <div class="col-4 bg-secondary me-auto">Consequuntur!</div>
+    </div>
+
+    <div class="mt-5"></div>
+
+    <div class="row">
+        <div class="col-auto me-auto bg-secondary">.col-auto .me-auto</div>
+        <div class="col-auto bg-primary">.col-auto</div>
+    </div>
+
+    <div class="mt-5"></div>
+
+    <div class="clearfix">
+        <img src="https://picsum.photos/id/235/200/100" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+
+        <p>
+            A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding
+            quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+        </p>
+
+        <p>
+            As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with
+            some actual content in here, rather than just this boring placeholder text that goes on and on, but actually
+            conveys no tangible information at. It simply takes up space and should not really be read.
+        </p>
+
+        <p>
+            And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or
+            some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+        </p>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="mt-5"></div>
+
+    <div class="container">
+        <div class="float-left">
+            <img src="https://picsum.photos/id/237/200/300" alt="Resim">
+        </div>
+        <div class="float-right">
+            <p>Metin içeriği burada yer alır.</p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    Bu şekilde, Bootstrap'ın clearfix sınıfı sayfanızdaki yüzen öğelerin düzgün bir şekilde görüntülenmesini sağlar.
+
     <div class="mt-5"></div>
 
 
