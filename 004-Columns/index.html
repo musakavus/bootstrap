@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Columns</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--
+row align-items-start: Bu sınıf, sütunların içeriğini dikeyde en üstte hizalar.
+Yani sütunların içeriği en üstte başlar.
+
+row align-items-center: Bu sınıf, sütunların içeriğini dikeyde merkeze hizalar.
+Yani sütunların içeriği merkezde başlar.
+
+row align-items-start: Bu sınıf, sütunların içeriğini dikeyde aşağıya hizalar.
+Yani sütunların içeriği an aşağıda başlar.
+-->
+
+<div class="container">
+    <div class="row row-cols-3 border border-1 border-primary align-items-start">
+        <div class="col bg-primary">Lorem.</div>
+        <div class="col bg-warning">Eius?</div>
+        <div class="col bg-info">Itaque!</div>
+        <div class="col bg-secondary">Expedita.</div>
+        <div class="col bg-danger">
+            <div class="row row-cols-2">
+                <div class="col">Lorem.</div>
+                <div class="col">Ullam?</div>
+                <div class="col">Ab!</div>
+                <div class="col">Labore?</div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-3 border border-1 border-primary align-items-center mt-5">
+        <div class="col bg-primary">Lorem.</div>
+        <div class="col bg-warning">Eius?</div>
+        <div class="col bg-info">Itaque!</div>
+        <div class="col bg-secondary">Expedita.</div>
+        <div class="col bg-danger">
+            <div class="row row-cols-2">
+                <div class="col">Lorem.</div>
+                <div class="col">Ullam?</div>
+                <div class="col">Ab!</div>
+                <div class="col">Labore?</div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-3 border border-1 border-primary align-items-end mt-5">
+        <div class="col bg-primary">Lorem.</div>
+        <div class="col bg-warning">Eius?</div>
+        <div class="col bg-info">Itaque!</div>
+        <div class="col bg-secondary">Expedita.</div>
+        <div class="col bg-danger">
+            <div class="row row-cols-2">
+                <div class="col">Lorem.</div>
+                <div class="col">Ullam?</div>
+                <div class="col">Ab!</div>
+                <div class="col">Labore?</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container text-center">
+    <div class="mt-5"></div>
+
+    <div class="row justify-content-start border border-1">
+        <div class="col-4 border border-1">1 of two columns</div>
+        <div class="col-4 border border-1">2 of two columns</div>
+    </div>
+
+    <div class="mt-5"></div>
+
+    <div class="row justify-content-center border border-1">
+        <div class="col-4 border border-1">1 of two columns</div>
+        <div class="col-4 border border-1">2 of two columns</div>
+    </div>
+
+    <div class="mt-5"></div>
+
+    <div class="row justify-content-end border border-1">
+        <div class="col-4 border border-1">1 of two columns</div>
+        <div class="col-4 border border-1">2 of two columns</div>
+    </div>
+
+    <div class="mt-5"></div>
+
+    <div class="my-5"></div>
+
+    <div class="row justify-content-around border border-1">
+        <div class="col-4 border border-1">1 of two columns</div>
+        <div class="col-4 border border-1">2 of two columns</div>
+    </div>
+
+    <div class="mt-5"></div>
+
+    <div class="row justify-content-between border border-1">
+        <div class="col-4 border border-1">1 of two columns</div>
+        <div class="col-4 border border-1">2 of two columns</div>
+    </div>
+
+    <div class="mt-5"></div>
+
+    <div class="row justify-content-evenly border border-1">
+        <div class="col-4 border border-1">1 of two columns</div>
+        <div class="col-4 border border-1">2 of two columns</div>
+    </div>
+
+    <div class="mt-5"></div>
+
+    <div class="row">
+        <!--
+
+        sütunları düzenlerken fazla sütunların otomatik olarak bir sonraki satıra kaydığını gösterir.
+        -->
+        <div class="col-9 bg-secondary">Lorem</div>
+        <div class="col-4 bg-primary">Ipsum</div>
+        <div class="col-6 bg-warning">Sit</div>
+    </div>
+
+    <div class="mt-5"></div>
+
+    <div class="row">
+        <div class="col-6 col-sm-3 bg-primary">1 of 4 columns</div>
+        <div class="col-6 col-sm-3 bg-secondary">2 of 4 columns</div>
+        <div class="w-100"></div>
+        <!-- w-75 w-50 w-25 de diyebilirsin. Genişlik yüzdesi kadar boşluk bırakılır aynı satırda.
+         Aynı satırda yetmezse boşluk genişliğinin geri kalanı diğer satıra geçer-->
+        <div class="col-6 col-sm-3 bg-danger">3 of 4 columns</div>
+        <div class="col-6 col-sm-3 bg-info">4 of 4 columns</div>
+    </div>
+
+    <div class="mt-5"></div>
+
+    <div class="row">
+        <div class="col-6 col-sm-4 bg-warning">.col-6 .col-sm-4</div>
+        <div class="col-6 col-sm-4 bg-danger">.col-6 .col-sm-4</div>
+
+        <!-- Force next columns to break to new line at md breakpoint and up -->
+        <div class="w-100 d-none d-md-block"></div>
+
+        <div class="col-6 col-sm-4 bg-info">.col-6 .col-sm-4</div>
+        <div class="col-6 col-sm-4 bg-secondary">.col-6 .col-sm-4</div>
+    </div>
+
+    <div class="mt-5"></div>
+
+    <div class="row">
+        <div class="col bg-secondary">1</div>
+        <div class="col order-5 bg-info">2</div>
+        <div class="col order-2 bg-warning">3</div>
+        <!--
+         içeriğinizin görsel sırasını kontrol etmek için .order- sınıflarını kullanmanıza olanak tanır.
+         Bu sınıflar duyarlıdır, bu nedenle sıralamayı kesitlere göre belirleyebilirsiniz (örneğin, .order-1.order-md-2).
+         Bu sınıflar altı grid kesiti boyunca 1'den 5'e kadar desteğe sahiptir. Eğer daha fazla .order-* sınıfına
+         ihtiyacınız varsa, varsayılan sayıyı Sass değişkeni üzerinden değiştirebilirsiniz.-->
+    </div>
+
+    <div class="mt-5"></div>
+
+    <div class="row">
+        <div class="col-3 order-lg-last bg-warning">1</div>
+        <div class="col-3 order-lg-3 bg-info">2</div>
+        <div class="col-3 order-lg-2 bg-secondary">3</div>
+        <div class="col-3 order-lg-first bg-primary">4</div>
+    </div>
+
+    <div class="mt-5"></div>
+
+    <div class="mt-5"></div>
+
+
+
+
+</div>
+
+
+<!--
+Bootstrap'un sütunları, grid'in flexbox mimarisi üzerine inşa edilir.
+-->
+
+
+</body>
+</html>
