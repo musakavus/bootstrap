@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gutters</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!--
+"Gutters," Bootstrap'ta sütunlar arasındaki dolgu veya boşlukları temsil eder.
+-->
+
+<!--
+Sütunlar arasındaki boşluklar, genellikle sütun sınıflarının arasına eklenen g-* sınıfları ile kontrol edilir.
+Örneğin, gx-* sınıfı yatay boşluğu (sütunların yanındaki boşluğu) temsil ederken,
+gy-* sınıfı dikey boşluğu (sütunların üzerinde ve altındaki boşluğu) temsil eder.
+Bu sınıflar, sütunların arasındaki boşluğu belirli bir boyutta ayarlamak için kullanılır.
+-->
+
+
+<!--
+Bu kod, .gx-5 sınıfını kullanarak yatay boşluğu 1.25rem (20px) artırır ve .px-4 ile .container'ın dolgusunu 1rem (16px)
+artırır. Bu, yatay boşlukların genişliğini artırır ve içeriğin düzgün bir şekilde hizalanmasını sağlar.
+-->
+
+<!--
+Yani, yatay boşlukları ayarlamak için .gx-* sınıflarını kullanabilir ve gerektiğinde .container veya .container-fluid
+öğesinin dolgusunu ayarlayabilirsiniz. Bu, içeriği düzgün bir şekilde düzenlemek için kullanışlıdır.
+-->
+
+<!--
+gx padding yapar margin yapmaz
+-->
+<div class="container overflow-hidden border border-1">
+    <div class="mt-5"></div>
+    <div class="row gx-5 text-center">
+        <div class="col-3 bg-1 border border">Lorem1</div>
+        <div class="col-3 bg-2">Lorem2</div>
+        <div class="col-3 bg-3">Lorem3</div>
+        <div class="col-3 bg-4">Lorem4</div>
+    </div>
+    <div class="mt-5"></div>
+</div>
+
+
+<!--
+Örneğin, web sayfanızın belirli bir bölümünde iki sütun varsa, bu sütunlar arasındaki boşluklar (gutters), sütunların
+içeriğinin birbirine karışmadan düzgün bir şekilde görüntülenmesini sağlar. Gutters, sayfanızın tasarımını düzenli tutar ve içeriği daha okunaklı hale getirir.
+-->
+<!--
+Yani, .overflow-hidden sınıfı, içeriğin taşmasını önlemek ve içeriği sınırlar içinde tutmak için kullanılır.
+Bu, içeriğin düzgün bir şekilde görüntülenmesini sağlar ve yatay boşlukların kontrol edilmesine yardımcı olur.
+-->
+<br>
+
+<div class="container overflow-hidden text-center">
+    <div class="row gx-5">
+        <div class="col bg-6">
+            <div class="p-3">Custom column padding</div>
+        </div>
+        <div class="col bg-7">
+            <div class="p-3">Custom column padding</div>
+        </div>
+        <div class="col bg-8">
+            <div class="p-3">Custom column padding</div>
+        </div>
+        <div class="col bg-9">
+            <div class="p-3">Custom column padding</div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-5"></div>
+
+
+<!--
+"Vertical gutters" olarak adlandırılan .gy-* sınıfları, sütunların yatay boşluklarını kontrol etmek için kullanılır ve
+sütunlar yeni satırlara kaydığında dikey boşlukları kontrol eder.
+-->
+<div class="container text-center">
+    <div class="row row-cols-2 gy-3 overflow-hidden">
+        <div class="col bg-5">Lorem.Lorem.Lorem.Lorem.Lorem.Lorem.</div>
+        <div class="col bg-6">Cumque!Lorem.Lorem.Lorem.Lorem.Lorem.</div>
+        <div class="col bg-7">Ipsum.Lorem.Lorem.Lorem.Lorem.Lorem.</div>
+        <div class="col bg-8">Voluptates!Lorem.Lorem.Lorem.Lorem.Lorem.</div>
+    </div>
+</div>
+
+<div class="mt-5"></div>
+
+<div class="container px-2">
+    <div class="row g-3  overflow-hidden">
+        <div class="col-6 bg-1">Lorem ipsum.Lorem ipsum.Lorem ipsum.</div>
+        <div class="col-6 bg-2">Commodi, perspiciatis.Lorem ipsum.Lorem ipsum.</div>
+        <div class="col-6 bg-8">Nesciunt, tempore.Lorem ipsum.Lorem ipsum.</div>
+        <div class="col-6 bg-10">Provident, quibusdam.Lorem ipsum.Lorem ipsum.</div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<div class="container px-1">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-2 g-md-4">
+        <div class="col bg-1">Row column</div>
+        <div class="col bg-2">Row column</div>
+        <div class="col bg-3">Row column</div>
+        <div class="col bg-4">Row column</div>
+        <div class="col bg-5">Row column</div>
+        <div class="col bg-6">Row column</div>
+        <div class="col bg-7">Row column</div>
+        <div class="col bg-8">Row column</div>
+        <div class="col bg-9">Row column</div>
+        <div class="col bg-10">Row column</div>
+        <div class="col bg-1">Row column</div>
+        <div class="col bg-2">Row column</div>
+    </div>
+</div>
+
+<!--
+Bootstrap'daki önceden tanımlanmış grid sınıflarındaki sütunlar arasındaki boşlukları kaldırmak için .g-0 kullanılabilir.
+Bu, .row'un negatif kenar boşluklarını ve tüm doğrudan çocuk sütunlardan yatay dolguları kaldırır.
+-->
+</body>
+</html>
