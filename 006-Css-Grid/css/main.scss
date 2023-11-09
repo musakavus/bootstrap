@@ -1,0 +1,58 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$bg-color-1: #FF5733; // Turuncu
+$bg-color-2: #66CCFF; // Açık Mavi
+$bg-color-3: #FF9900; // Portakal
+$bg-color-4: #33CC33; // Yeşil
+$bg-color-5: #9933CC; // Mor
+$bg-color-6: #FF3399; // Pembe
+$bg-color-7: #66FF66; // Parlak Yeşil
+$bg-color-8: #3333FF; // Mavi
+$bg-color-9: #FFFF66; // Sarı
+$bg-color-10: #FF66CC; // Açık Pembe
+
+@mixin custom-bg($color) {
+  background-color: $color;
+  // İstediğiniz diğer stil tanımlamaları
+}
+
+
+.bg-1 {
+  @include custom-bg($bg-color-1);
+}
+
+.bg-2 {
+  @include custom-bg($bg-color-2);
+}
+
+.bg-3 {
+  @include custom-bg($bg-color-3);
+}
+
+.bg-4 {
+  @include custom-bg($bg-color-4);
+}
+
+.bg-5 {
+  @include custom-bg($bg-color-5);
+}
+
+.bg-6 {
+  @include custom-bg($bg-color-6);
+}
+
+.bg-7 {
+  @include custom-bg($bg-color-7);
+}
+
+.bg-8 {
+  @include custom-bg($bg-color-8);
+}
+
+.bg-9 {
+  @include custom-bg($bg-color-9);
+}
+
+.bg-10 {
+  @include custom-bg($bg-color-10);
+}
