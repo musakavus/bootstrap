@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!--
+Bazı tarayıcı varsayılan değerlerini, ölçeklenebilir bileşen boşluğu için em yerine rem kullanacak şekilde güncelleriz.
+-->
+
+<!--
+margin-top kullanmaktan kaçınırız. Dikey kenar boşlukları çökebilir, beklenmeyen sonuçlar ortaya çıkarabilir.
+Ancak daha önemlisi, tek yönlü bir kenar boşluğu zihinsel modeli daha basit hale getirir.
+-->
+
+<hr>
+
+<div class="text-success">
+    <hr>
+</div>
+
+<!--
+Bootstrap'te, resimleri duyarlı hale getirmek için .img-fluid sınıfı kullanılır. Bu sınıfı bir resme uyguladığınızda,
+max-width: 100%; ve height: auto; özelliklerini ayarlar.
+-->
+
+<img class="img-fluid" src="" alt="">
+
+<hr class="border border-danger border-2 opacity-50">
+<hr class="border border-primary border-3 opacity-75">
+
+<div class="mt-5"></div>
+
+<img class="img-fluid" src="img/resim.jpg" alt="">
+
+<div class="mt-5"></div>
+
+<img class="img-thumbnail" src="img/resim.jpg" alt="">
+
+<div class="mt-5"></div>
+
+<div class="container-fluid">
+    <img class="rounded float-end" src="img/resim3.jpg" alt="">
+    <img class="rounded float-start" src="img/resim3.jpg" alt="">
+</div>
+
+<div class="mt-5"></div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="text-center">
+    <img src="img/resim3.jpg" class="rounded" alt="...">
+</div>
+<br>
+<br>
+<div class="container-fluid ">
+    <img class="rounded mx-auto d-block" src="img/resim3.jpg" alt="">
+</div>
+<br>
+<br>
+<picture>
+    <source srcset="img/resim2.jpg" type="image/svg+xml">
+    <img src="img/resim.jpg" class="img-fluid img-thumbnail" alt="...">
+</picture>
+
+</body>
+</html>
