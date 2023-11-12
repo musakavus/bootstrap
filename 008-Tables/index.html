@@ -6,6 +6,504 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+<div class="container px-2">
+    <div class="row row-cols-3 text-center gx-3 overflow-hidden">
+        <div class="col bg-1">Lorem ipsum.</div>
+        <div class="col bg-2">Quam, soluta?</div>
+        <div class="col bg-3">Laboriosam, quasi?</div>
+        <div class="col bg-4">Dolores, eligendi!</div>
+        <div class="col bg-5">Eius, laborum?</div>
+        <div class="col bg-6">Enim, provident.</div>
+    </div>
+</div>
+
+<!--
+<div class="text-success opacity-50">
+    <hr>
+</div>
+-->
+<div class="hr border - border-danger mt-3 opacity-50"></div>
+
+<!--
+<thead>: Tablo başlığını içeren bir bölümü temsil eder.
+<tbody>: Tablo verilerini içeren bir bölümü temsil eder.
+<tr>: Tablo satırını temsil eder.
+<th>: Tablo başlığı hücresini temsil eder.
+<td>: Tablo veri hücresini temsil eder.
+-->
+
+<!--
+scope özelliği, bir tablo başlığı hücresinin (<th>) içeriğinin hangi hücrelere ait olduğunu belirtir.
+Bu özellik, ekran okuyucular gibi yardımcı teknolojiler tarafından kullanılabilir. İki değeri vardır: row ve col.
+
+scope="row": Bu, başlık hücresinin bir satıra ait olduğunu belirtir. Yani, o başlık hücresi,
+o satırdaki tüm veri hücrelerini açıklar.
+
+scope="col": Bu, başlık hücresinin bir sütuna ait olduğunu belirtir. Yani, o başlık hücresi, o sütundaki tüm veri
+hücrelerini açıklar.
+-->
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Marka</th>
+        <th scope="col">Model</th>
+        <th scope="col">Fiyat</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Apple</td>
+        <td>Iphone</td>
+        <td>32999 $</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Samsung</td>
+        <td>Note-8</td>
+        <td>22923 $</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Bosh</td>
+        <td>Relasky</td>
+        <td>998 $</td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td>Asus</td>
+        <td>Tuf Gaming</td>
+        <td>1200 $</td>
+    </tr>
+    <tr>
+        <th scope="row">5</th>
+        <td>Monster</td>
+        <td>Pulsar</td>
+        <td>25 $</td>
+    </tr>
+    </tbody>
+
+</table>
+
+<div class="hr border border-danger mt-5 opacity-50"></div>
+<table class="table mt-5">
+    <thead>
+    <tr class="table-primary">
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Surname</th>
+        <th scope="col">Marks</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr class="table-danger">
+        <th scope="row">1</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr class="table-warning">
+        <th scope="row">2</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr class="table-danger">
+        <th scope="row">3</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr class="table-warning">
+        <th scope="row">4</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+
+
+    </tbody>
+</table>
+<div class="hr border border-danger mt-5 opacity-50"></div>
+<table class="table mt-5 table-striped-columns table-dark table-hover">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Surname</th>
+        <th scope="col">Marks</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+
+
+    </tbody>
+</table>
+<div class="hr border border-danger mt-5 opacity-50"></div>
+<table class="table mt-5 table-striped-columns table-success table-hover">
+<!--
+table stripped -- sira sıra (row)renk belir
+table stripped columns -- buna kolonlarda dahil
+table-success -- renk seç
+table hover -- zerine gelince hover aktif
+-->
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Surname</th>
+        <th scope="col">Marks</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr class="table-active"> <!-- Seçili bir sütun belirledik -->
+        <th scope="row">2</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td colspan="2">Timur</td> <!-- İki kolonluk yer kapla -->
+        <td>100</td>
+    </tr>
+
+
+    </tbody>
+</table>
+<div class="hr border border-danger mt-5 opacity-50"></div>
+
+<table class="table mt-5 table-bordered">
+    <!--table bordered -- satır sütun borderlarını göster-->
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Surname</th>
+        <th scope="col">Marks</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td colspan="2">Timur</td> <!-- İki kolonluk yer kapla -->
+        <td>100</td>
+    </tr>
+
+
+    </tbody>
+</table>
+
+<div class="hr border border-danger mt-5 opacity-50"></div>
+
+<table class="table mt-5 table-borderless">
+    <!--table-borderless -- Hiç border yok hiiiç-->
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Surname</th>
+        <th scope="col">Marks</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr> <!-- Seçili bir sütun belirledik -->
+        <th scope="row">2</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td colspan="2">Timur</td> <!-- İki kolonluk yer kapla -->
+        <td>100</td>
+    </tr>
+
+
+    </tbody>
+</table>
+
+<div class="hr border border-danger mt-5 opacity-50"></div>
+
+<table class="table mt-5 table-sm">
+    <!--table-sm -- küçük tablo-->
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Surname</th>
+        <th scope="col">Marks</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr> <!-- Seçili bir sütun belirledik -->
+        <th scope="row">2</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td colspan="2">Timur</td> <!-- İki kolonluk yer kapla -->
+        <td>100</td>
+    </tr>
+
+
+    </tbody>
+</table>
+
+<div class="hr border border-danger mt-5 opacity-50"></div>
+
+<table class="table mt-5">
+    <caption class="text-body-secondary lead">List of User</caption>
+<!--liste açıklması altta-->
+<!--    üstte istiyorsan table tagına caption-top sınıfına da ekle-->
+    <thead class="table-dark">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Surname</th>
+        <th scope="col">Marks</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td>Timur</td>
+        <td>Taylan</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td colspan="2">Timur</td> <!-- İki kolonluk yer kapla -->
+        <td>100</td>
+    </tr>
+
+
+    </tbody>
+    <tfoot>
+    <tr>
+        <th>Footer</th>
+        <th>Footer</th>
+        <th>Footer</th>
+        <th>Footer</th>
+    </tr>
+    </tfoot>
+</table>
+
+<div class="hr border border-danger mt-5 opacity-50"></div>
+
+<div class="table-responsive-xl">
+<!--  RESPONSİVE TABLE  -->
+    <table class="table mt-5">
+        <caption class="text-body-secondary lead">List of User</caption>
+        <!--liste açıklması altta-->
+        <!--    üstte istiyorsan table tagına caption-top sınıfına da ekle-->
+        <thead class="table-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Surname</th>
+            <th scope="col">Marks</th>
+            <th scope="col">Marks</th>
+            <th scope="col">Marks</th>
+            <th scope="col">Marks</th>
+            <th scope="col">Marks</th>
+            <th scope="col">Marks</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Timur</td>
+            <td>Taylan</td>
+            <td>100</td>
+            <td>Timur</td>
+            <td>Taylan</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Timur</td>
+            <td>Taylan</td>
+            <td>100</td>
+            <td>Timur</td>
+            <td>Taylan</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Timur</td>
+            <td>Taylan</td>
+            <td>100</td>
+            <td>Timur</td>
+            <td>Taylan</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>Timur</td>
+            <td>Taylan</td>
+            <td>100</td>
+            <td>Timur</td>
+            <td>Taylan</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td colspan="2">Timur</td> <!-- İki kolonluk yer kapla -->
+            <td>100</td>
+            <td>Timur</td>
+            <td>Taylan</td>
+            <td>100</td>
+        </tr>
+
+
+        </tbody>
+        <tfoot>
+        <tr>
+            <th>Footer</th>
+            <th>Footer</th>
+            <th>Footer</th>
+            <th>Footer</th>
+            <th>Footer</th>
+            <th>Footer</th>
+            <th>Footer</th>
+        </tr>
+        </tfoot>
+    </table>
+</div>
 
 </body>
 </html>
