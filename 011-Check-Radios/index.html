@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check & Radio</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="">
+</head>
+<body>
+<div class="mb-3">
+    <div class="container">
+        <form action="">
+            <div class="form-check">
+                <input id="formcheck" type="checkbox" class="form-check-input">
+                <label class="form-check-label" for="formcheck">18 yaşında veya daha büyüğüm</label>
+            </div>
+            <div class="form-check">
+                <input id="formcheck1" type="checkbox" class="form-check-input">
+                <label class="form-check-label" for="formcheck1">Çerezleri kabul ediyorum</label>
+            </div>
+        </form>
+    </div>
+</div>
+
+<br>
+
+<div class="mb-3">
+    <div class="container">
+        <div class="form-check">
+            <!--
+            burda name kullanmak çok önemli. Sade bir seçim yapabilmek açısından
+            -->
+            <input id="formradio" name="flexradiodefault" class="form-check-input" type="radio">
+            <label for="formradio" class="form-check-label">Evet</label>
+        </div>
+        <div class="form-check">
+            <input id="formradio1" name="flexradiodefault" class="form-check-input" checked type="radio">
+            <label for="formradio1" class="form-check-label">Hayır</label>
+        </div>
+
+    </div>
+</div>
+
+<div class="mb-3">
+    <div class="container">
+        <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="formswitch-1" role="switch" checked>
+            <label for="formswitch-1" class="form-check-label">Gizlilik sözleşmesini kabul ediyorum</label>
+        </div>
+        <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="formswitch-2" role="switch">
+            <label for="formswitch-2" class="form-check-label">Çerezleri kabuyl ediyorum</label>
+        </div>
+        <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="formswitch-3" role="switch">
+            <label for="formswitch-3" class="form-check-label">18 yaşındna büyük olduğumu kabul ediyorum</label>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3">
+    <div class="container">
+        <form action="">
+            <div class="form-check form-check-inline">
+                <label for="forminline" class="form-label">1</label>
+                <input type="checkbox" value="option1" checked id="forminline" name="name_form_inline"
+                       class="form-check-input">
+            </div>
+            <div class="form-check form-check-inline">
+                <label for="forminline1" class="form-label">3</label>
+                <input id="forminline1" value="option2" type="checkbox" name="name_form_inline"
+                       class="form-check-input">
+            </div>
+            <div class="form-check form-check-inline">
+                <label for="forminline2" class="form-label">3(disabled)</label>
+                <input id="forminline2" value="option3" type="checkbox" name="name_form_inline"
+                       class="form-check-input" checked disabled>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<hr class="border border-1 border-danger">
+
+<div class="mb-3">
+    <div class="container">
+        <form action="">
+            <div class="form-check form-check-reverse">
+                <label for="reversecheck" class="form-label">18 yaşından büyüğüm</label>
+                <input id="reversecheck" type="checkbox" class="form-check-input" checked>
+            </div>
+            <div class="form-check form-check-reverse">
+                <label for="reversecheck1" class="form-label">Gizlilik sözleşmesini kabul ediyorum</label>
+                <input id="reversecheck1" type="checkbox" class="form-check-input" checked>
+            </div>
+            <div class="form-check form-switch form-check-reverse">
+                <label for="reversecheck2" class="form-label">Benimle iletişime geçilmesini kabul ediyorum</label>
+                <input id="reversecheck2" type="checkbox" class="form-check-input">
+            </div>
+        </form>
+    </div>
+</div>
+
+<hr class="border border-1 border-danger">
+
+
+<!--
+labelsiz kullanmak için bir dğer yol
+-->
+<div class="mb-3">
+    <div class="container">
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" aria-label="...">
+        </div>
+    </div>
+</div>
+
+<hr class="border border-1 border-danger">
+
+
+<div class="mb-3">
+    <div class="container">
+        <form action="">
+            <div class="form-check">
+                <input id="forbtn" class="btn-check" type="checkbox">
+                <label for="forbtn" class="btn btn-primary">Single Toogle</label>
+
+                <input id="forbtn1" class="btn-check" type="checkbox">
+                <label for="forbtn1" class="btn btn-secondary">Double Toogle</label>
+
+                <input id="forbtn2" class="btn-check" type="checkbox" disabled>
+                <label for="forbtn2" class="btn btn-secondary">Disabled</label>
+
+                <input id="forbtn3" class="btn-check" type="checkbox">
+                <label for="forbtn3" class="btn">Test</label>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+
+<hr class="border border-1 border-danger">
+
+<div class="mb-3">
+    <div class="container">
+        <form action="">
+            <div class="form-check">
+                <input id="btnradio" type="radio" class="btn-check" name="options">
+                <label for="btnradio" class="btn btn-secondary">One</label>
+
+                <input id="btnradio1" type="radio" class="btn-check" name="options">
+                <label for="btnradio1" class="btn btn-secondary">Second</label>
+
+                <input id="btnradio2" type="radio" class="btn-check" name="options">
+                <label for="btnradio2" class="btn btn-secondary">Third</label>
+
+                <input id="btnradio3" type="radio" class="btn-check" name="options" disabled>
+                <label for="btnradio3" class="btn btn-secondary-">Disabled</label>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<hr class="border border-1 border-danger">
+
+<div class="mb-3">
+    <div class="container">
+        <form action="">
+            <div class="form-check">
+                <input id="outlined" name="outlined" class="btn-check" type="radio">
+                <label for="outlined"  class="btn btn-outline-danger" >+18</label>
+                <input id="outlined1" name="outlined" class="btn-check" type="radio">
+                <label for="outlined1" class="btn btn-outline-danger" >+25</label>
+                <input id="outlined2" name="outlined" class="btn-check" type="radio">
+                <label for="outlined2" class="btn btn-outline-danger" >+48</label>
+
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
