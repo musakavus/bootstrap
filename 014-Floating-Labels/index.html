@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>floating Labels</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<!-- placeholder şart abi -->
+<div class="container">
+    <div class="form-floating mb-3">
+        <input id="floatform" type="email" class="form-control" placeholder="name@example.com">
+        <label for="floatform" class="form-label">E-mail Adress</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input id="floatform1" type="password" class="form-control" placeholder="name@example.com">
+        <label for="floatform1" class="form-label">Parola</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input id="floatform2" type="email" class="form-control" value="galatasaray@gmail.com"
+               placeholder="name@example.com">
+        <label for="floatform2" class="form-label">e-mail</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input id="floatform3" type="email" class="form-control is-invalid" value="galatasaray@gmail.com"
+               placeholder="name@example.com">
+        <label for="floatform3" class="form-label">e-mail</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <textarea class="form-control is-valid" id="textarea-label" maxlength="1000" size="50" cols="40" rows="40"
+                  style="height: 100px"></textarea>
+        <label for="textarea-label">comments</label>
+    </div>
+
+    <div class="form-floating mb-3">
+
+        <select class="form-select" name="" aria-label="" id="forselect">
+            <option selected value="0">Open this selected menu</option>
+            <option value="1">2</option>
+            <option value="2">3</option>
+        </select>
+        <label for="forselect">Open this menu</label>
+    </div>
+
+    <div class="input-group has-validation">
+        <span class="input-group-text">@</span>
+        <div class="form-floating is-invalid">
+            <input type="text" class="form-control is-invalid" id="floatingInputGroup2" placeholder="Username" required>
+            <label for="floatingInputGroup2">Username</label>
+        </div>
+        <div class="invalid-feedback">
+            Please choose a username.
+        </div>
+    </div>
+
+    <div class="row g-2">
+        <div class="col-md">
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
+                <label for="floatingInputGrid">Email address</label>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="form-floating">
+                <select class="form-select" id="floatingSelectGrid">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <label for="floatingSelectGrid">Works with selects</label>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
