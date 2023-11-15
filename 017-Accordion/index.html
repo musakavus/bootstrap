@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accordions</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<!--
+data-bs-toggle ="collapse" => ifadesi, bir butona veya başka bir tetikleyiciye tıklanınca bir öğenin açılıp
+kapatılmasını sağlayabilir.
+-->
+
+<!--
+data-bs-target özelliği, hangi elemanın etkileşime geçeceğini belirtir.
+Bu, genellikle bir CSS veya jQuery selektörü veya bir elementin id değeri olabilir.
+-->
+
+<!--
+buton, header'ın içine
+-->
+
+<!--
+Bootstrap accordion örneğinde, aria-expanded özelliği, her accordion öğesinin başlık butonunda kullanılır.
+aria-expanded özelliği genellikle bir durum değeri alır:
+
+"true": Bu değer, öğenin genişletildiği (açık) durumu temsil eder.
+"false": Bu değer, öğenin daraltıldığı (kapalı) durumu temsil eder.
+-->
+
+<!--
+Bootstrap accordion örneğinde, aria-expanded özelliği, her accordion öğesinin başlık butonunda kullanılır.
+-->
+
+<!--
+collapse: Bu class, bir elementin başlangıçta gizli olacağını (collapsed) belirtir.
+
+show: Bu class, bir elementin görünür (visible) olacağını belirtir. Başlık butonuna tıklandığında ilgili
+içeriği açmak için kullanılır.
+-->
+
+<!--
+show: Bu class, içeriğin görünür (visible) olacağını belirtir. Başlık butonuna tıklandığında ilgili içeriği
+açmak için kullanılır.
+-->
+
+
+<div class="container-fluid mb-3">
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                            data-bs-target="#accordionbodydiv">
+                        Gizlilik Politikası
+                    </button>
+                </div>
+                <div class="accordion-collapse " id="accordionbodydiv">
+                    <div class="accordion-body collapse show">
+                        <strong>Gizlilik politikamız </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Ad animi architecto cupiditate ducimus eaque in, mollitia quidem saepe voluptatem. Eligendi est
+                        et in incidunt labore magni pariatur praesentium! Culpa, nemo!
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                            data-bs-target="#accordionbodydiv1">
+                        Çerezlerimiz
+                    </button>
+                </div>
+
+                <div class="accordion-collapse collapse" id="accordionbodydiv1">
+                    <div class="accordion-body">
+                        <strong>Çerezlerimiz </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                        accusamus adipisci aliquid aperiam aspernatur dolorem ducimus eius eos et eveniet explicabo,
+                        magnam modi neque odio quas quos saepe similique suscipit tenetur ut veniam vitae voluptate? Est
+                        fuga nobis nostrum repellat? Doloremque itaque perferendis quisquam voluptatum!
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordionbodydiv2">
+                        Aydınlatma Metni
+                    </button>
+                </div>
+                <div class="accordion-collapse collapse" id="accordionbodydiv2">
+                    <div class="accordion-body">
+                        <strong>Aydınlatma metnimiz</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aut corporis dicta eligendi et exercitationem hic incidunt libero, minus molestiae non placeat
+                        porro, provident quaerat quidem ratione rem vero? Alias aliquid dignissimos distinctio dolores
+                        eius enim eos incidunt magni maiores modi molestias, necessitatibus nemo nostrum officiis
+                        pariatur provident quibusdam quo reiciendis rerum saepe soluta sunt voluptates.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<hr class="border border-1 border-danger">
+
+<div class="container-fluid mb-3">
+<!--
+accordion-flush sınıfı yan borderları kaldırır.
+-->
+        <div class="accordion accordion-flush">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                            data-bs-target="#accordionbodydiv4">
+                        Gizlilik Politikası
+                    </button>
+                </div>
+                <div class="accordion-collapse " id="accordionbodydiv4">
+                    <div class="accordion-body collapse show">
+                        <strong>Gizlilik politikamız </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Ad animi architecto cupiditate ducimus eaque in, mollitia quidem saepe voluptatem. Eligendi est
+                        et in incidunt labore magni pariatur praesentium! Culpa, nemo!
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                            data-bs-target="#accordionbodydiv5">
+                        Çerezlerimiz
+                    </button>
+                </div>
+
+                <div class="accordion-collapse collapse" id="accordionbodydiv5">
+                    <div class="accordion-body">
+                        <strong>Çerezlerimiz </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                        accusamus adipisci aliquid aperiam aspernatur dolorem ducimus eius eos et eveniet explicabo,
+                        magnam modi neque odio quas quos saepe similique suscipit tenetur ut veniam vitae voluptate? Est
+                        fuga nobis nostrum repellat? Doloremque itaque perferendis quisquam voluptatum!
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordionbodydiv6">
+                        Aydınlatma Metni
+                    </button>
+                </div>
+                <div class="accordion-collapse collapse" id="accordionbodydiv6">
+                    <div class="accordion-body">
+                        <strong>Aydınlatma metnimiz</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aut corporis dicta eligendi et exercitationem hic incidunt libero, minus molestiae non placeat
+                        porro, provident quaerat quidem ratione rem vero? Alias aliquid dignissimos distinctio dolores
+                        eius enim eos incidunt magni maiores modi molestias, necessitatibus nemo nostrum officiis
+                        pariatur provident quibusdam quo reiciendis rerum saepe soluta sunt voluptates.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
