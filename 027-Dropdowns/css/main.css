@@ -10301,5 +10301,7 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important; } }
+.btn-group-pad {
+  margin: 5px 0; }
 
 /*# sourceMappingURL=main.css.map */

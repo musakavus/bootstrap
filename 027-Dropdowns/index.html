@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
     <title>Dropdowns</title>
     <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
 </head>
 <body>
 <div class="container">
@@ -187,8 +188,8 @@
             Dropend
         </button>
 
-            <button class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-target="#dropendmenu">Dropend Split</button>
-            <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split"></button>
+        <button class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-target="#dropendmenu">Dropend Split</button>
+        <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split"></button>
 
         <ul class="dropdown-menu" id="dropendmenu">
             <li><a href="" class="dropdown-item">Lorem.</a></li>
@@ -200,7 +201,9 @@
     <hr>
 
     <div class="dropdown btn-group">
-        <button class="btn btn-secondary dropdown-toggle" data-bs-target="#dropdown-right" data-bs-toggle="dropdown" >Right-aligned menu example</button>
+        <button class="btn btn-secondary dropdown-toggle" data-bs-target="#dropdown-right" data-bs-toggle="dropdown">
+            Right-aligned menu example
+        </button>
 
         <ul class="dropdown-menu dropdown-menu-end" id="dropdown-right">
             <li>
@@ -218,6 +221,147 @@
 
     <hr class="" style="margin-top: 100px">
 
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#dropdownalignment">
+            Right-aligned menu example
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-lg-end" id="dropdownalignment">
+            <li><a href="" class="dropdown-item">Lorem</a></li>
+            <li><a href="" class="dropdown-item">Ipsum</a></li>
+            <li><a href="" class="dropdown-item">Sit?</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="mb-3">
+        <div class="btn-group btn-group-pad">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-target="#drpdwn1"
+                        data-bs-toggle="dropdown">
+                    Dropdown
+                </button>
+                <ul class="dropdown-menu" id="drpdwn1">
+                    <li><a href="" class="dropdown-item">Lorem.</a></li>
+                    <li><a href="" class="dropdown-item">Architecto.</a></li>
+                    <li><a href="" class="dropdown-item">Amet.</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="btn-group btn-group-pad">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    data-bs-target="#drpdwn2">
+                Right-aligned menu
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" id="drpdwn2">
+                <li><a href="" class="dropdown-item">Lorem.</a></li>
+                <li><a href="" class="dropdown-item">Sed?</a></li>
+                <li><a href="" class="dropdown-item">Eligendi?</a></li>
+            </ul>
+        </div>
+        <div class="btn-group btn-group-pad">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-target="#drpdwn3"
+                    data-bs-toggle="dropdown">Left-aligned, right-aligned lg
+            </button>
+            <ol class="dropdown-menu dropdown-menu-start dropdown-menu-lg-end" id="drpdwn3">
+                <li><a href="" class="dropdown-item">Lorem.</a></li>
+                <li><a href="" class="dropdown-item">Sed?</a></li>
+                <li><a href="" class="dropdown-item">Eligendi?</a></li>
+            </ol>
+        </div>
+        <div class="btn-group dropstart btn-group-pad">
+            <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#drpdwn4">
+                Dropstart
+            </button>
+            <ol class="dropdown-menu" id="drpdwn4">
+                <li><a href="" class="dropdown-item">Lorem.</a></li>
+                <li><a href="" class="dropdown-item">Architecto.</a></li>
+                <li><a href="" class="dropdown-item">Quidem?</a></li>
+            </ol>
+        </div>
+        <div class="btn-group dropend btn-group-pad">
+            <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#drpdwn5">
+                Dropstart
+            </button>
+            <ol class="dropdown-menu" id="drpdwn5">
+                <li><a href="" class="dropdown-item">Lorem.</a></li>
+                <li><a href="" class="dropdown-item">Architecto.</a></li>
+                <li><a href="" class="dropdown-item">Quidem?</a></li>
+            </ol>
+        </div>
+        <div class="btn-group dropup btn-group-pad">
+            <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#drpdwn6">
+                Dropstart
+            </button>
+            <ol class="dropdown-menu" id="drpdwn6">
+                <li><a href="" class="dropdown-item">Lorem..</a></li>
+                <li><a href="" class="dropdown-item">Architecto.</a></li>
+                <li><a href="" class="dropdown-item">Quidem?</a></li>
+            </ol>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <div class="mb-3 p-3 m-0 border-0 bd-example m-0 border-0">
+        <ul class="dropdown-menu">
+            <li><h6 class="dropdown-header">Dropdown Header</h6></li>
+            <li><a href="" class="dropdown-item">Lorem.</a></li>
+            <li><a href="" class="dropdown-item">Velit?</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <button class="btn btn-primary" data-bs-target="#register" data-bs-toggle="dropdown">Giriş yap</button>
+    <div class="dropdown-menu" id="register">
+        <form class="px-4 py-3" action="">
+            <label for="email-adres" class="form-label">Email Adress</label>
+            <input id="email-adres" class="form-control" type="email">
+            <label for="pass" class="form-label">Parola</label>
+            <input id="pass" class="form-control" type="password">
+
+            <div class="form-check">
+                <input id="formcheck" type="checkbox" class="form-check-input">
+                <label for="formcheck">Remember me</label>
+            </div>
+            <button class="btn btn-primary">
+                Sign in
+            </button>
+        </form>
+        <a class="dropdown-item" href="">New around here? Sign up</a>
+        <a class="dropdown-item" href="">Forgot Password</a>
+
+    </div>
+
+    <div class="mb-3" style="margin-top: 300px">
+    </div>
+
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" data-bs-offset="0,10" data-bs-toggle="dropdown" data-bs-target="#offset"
+                type="button">
+            Offset
+        </button>
+        <button class="btn btn-secondary dropdown-toggle" data-bs-reference="parent" data-bs-toggle="dropdown" data-bs-target="#reference"
+                type="button">
+            Reference
+        </button>
+
+        <ul class="dropdown-menu" id="offset">
+            <li><a href="" class="dropdown-item">Lorem.</a></li>
+            <li><a href="" class="dropdown-item">Vel?</a></li>
+            <li><a href="" class="dropdown-item">Perspiciatis.</a></li>
+        </ul>
+
+        <ul class="dropdown-menu" id="reference">
+
+        </ul>
+    </div>
+
+    <div class="mb-5"></div>
 </div>
 
 
