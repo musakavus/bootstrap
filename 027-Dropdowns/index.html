@@ -97,7 +97,8 @@
             <div class="collapse navbar-collapse" id="navbardarkdropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                        <button class="btn btn-dark dropdown-toggle" data-bs-target="#navbardarkdropdown" data-bs-toggle="dropdown">
+                        <button class="btn btn-dark dropdown-toggle" data-bs-target="#navbardarkdropdown"
+                                data-bs-toggle="dropdown">
                             Dropdown
                         </button>
                         <ul class="dropdown-menu dropdown-menu-dark">
@@ -117,13 +118,16 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown"
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
-                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                 Dropdown
                             </button>
                             <ul class="dropdown-menu dropdown-menu-dark">
@@ -137,11 +141,65 @@
             </div>
         </nav>
 
+        <hr>
 
+        <div class="dropdown-center">
+            <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                    data-bs-target="#dropdown-centered">Centered Dropdown
+            </button>
+            <ul class="dropdown-menu" id="dropdown-centered">
+                <li><a class="dropdown-item" href="">Lorem.</a></li>
+                <li><a class="dropdown-item" href="">Eius?</a></li>
+                <li class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="">Aliquam!</a></li>
 
-
+            </ul>
+        </div>
 
     </div>
+
+    <hr>
+
+    <div class="btn-group dropup" data-bs-toggle="dropdown" data-bs-target="#dropupmenu">
+        <button type="button" class="btn  btn-dark dropdown-toggle">
+            Dropup
+        </button>
+    </div>
+
+    <div class="btn-group dropup" data-bs-toggle="dropdown" data-bs-target="#dropupmenu">
+        <button type="button" class="btn btn-secondary">Split Dropup</button>
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split">
+            <span class="visually-hidden"></span>
+        </button>
+    </div>
+
+    <ol class="dropdown-menu" id="dropupmenu">
+        <li><a href="" class="dropdown-item">Lorem.</a></li>
+        <li><a href="" class="dropdown-item">Modi.</a></li>
+        <li><a href="" class="dropdown-item">Dicta.</a></li>
+    </ol>
+
+    <hr>
+
+    <div class="dropend btn-group">
+
+        <button class="btn btn-secondary dropdown-toggle" data-bs-target="#dropendmenu" data-bs-toggle="dropdown">
+            Dropend
+        </button>
+
+            <button class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-target="#dropendmenu">Dropend Split</button>
+            <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split"></button>
+
+        <ul class="dropdown-menu" id="dropendmenu">
+            <li><a href="" class="dropdown-item">Lorem.</a></li>
+            <li><a href="" class="dropdown-item">Ad!</a></li>
+            <li><a href="" class="dropdown-item">Accusamus?</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+
 
 </div>
 
