@@ -1,0 +1,6 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bd-violet-bg); /* Arkaplan rengini özelleştirme */
+  --bs-tooltip-color: var(--bs-white); /* Metin rengini özelleştirme */
+}
