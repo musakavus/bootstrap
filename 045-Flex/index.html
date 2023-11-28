@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="d-flex p-2 bg-primary">
+    <!--
+    d-flex: Bu sınıf, öğeyi bir flex konteynerine dönüştürür. Bu, içindeki doğrudan çocuk öğelerin flex öğeleri
+    olmasını sağlar Sonuç olarak, bu örnekteki <div> öğesi, d-flex sınıfı sayesinde bir flex konteynerine dönüştürülüyor.
+    Bu, içindeki diğer öğeleri yatay veya dikey olarak düzenlemek ve hizalamak için flexbox özelliklerini
+    kullanmanızı sağlar. Bu örnekteki metin içeren öğe, bir flexbox konteyneri olarak davranır ve
+    içeriğini içerideki flex öğeleri gibi yönetebilirsiniz.
+    -->
+    I'm a flexbox container!
+</div>
+
+<div class="d-inline-flex p-2 bg-secondary">
+    <!--
+    d-inline-flex: Bu sınıf, öğeyi bir inline flex konteynerine dönüştürür.
+    Bu, öğenin içeriğinin bulunduğu satırda diğer öğelerle aynı hizada olmasını sağlar.
+
+    Bu örnekteki <div> öğesi, d-inline-flex sınıfı sayesinde bir inline flex konteynerine dönüştürülüyor.
+    Bu, öğenin içindeki diğer öğeleri yatay veya dikey olarak düzenlemek ve hizalamak için flexbox
+    özelliklerini kullanmanızı sağlar. Bu konteyner, içeriğini içindeki flex öğeleri gibi yönetebilirsiniz.
+    -->
+    I'm an inline flexbox container!
+</div>
+
+<hr>
+
+<div class="d-flex flex-row mb-3">
+    <div class="p-2">Flex item 1</div>
+    <div class="p-2">Flex item 2</div>
+    <div class="p-2">Flex item 3</div>
+</div>
+<div class="d-flex flex-row-reverse">
+    <!--
+    direction utilities-- genellikle zaten flex direcetion default row'dur ama
+    .flex-row sınıfını kullanarak yatay bir yönlendirme (tarayıcı varsayımı) belirlenebilir veya .flex-row-reverse
+    sınıfını kullanarak yatay yönlendirmeyi ters yönden başlatmak mümkündür.
+    -->
+    <div class="p-2 bg-primary">Flex item 1</div>
+    <div class="p-2 bg-success">Flex item 2</div>
+    <div class="p-2 bg-warning">Flex item 3</div>
+</div>
+
+<hr>
+
+<div class="d-flex flex-column mb-3">
+    <!--
+    .flex-column sınıfını kullanarak dikey bir yönlendirme belirlenebilir veya .flex-column-reverse sınıfını
+    kullanarak dikey yönlendirmeyi ters yönden başlatmak mümkündür.
+    -->
+    <div class="p-2 bg-info">Flex item 1</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-danger">Flex item 3</div>
+</div>
+<div class="d-flex flex-column-reverse">
+    <div class="p-2 bg-info">Flex item 1</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-danger">Flex item 3</div>
+</div>
+
+<hr>
+
+<div class="d-flex justify-content-start">
+    <!-- Flex öğeleri başlangıç konumunda hizalanacak (DEFAULT)-->
+    <div class="bg-info">Justify</div>
+    <div class="bg-danger">Content</div>
+    <div class="bg-success">Start</div>
+</div>
+<hr>
+<div class="d-flex justify-content-end">
+    <!-- Flex öğeleri son konumunda hizalanacak -->
+    <div class="bg-info">Justify</div>
+    <div class="bg-danger">Content</div>
+    <div class="bg-success">End</div>
+</div>
+<hr>
+<div class="d-flex justify-content-center">
+    <!-- Flex öğeleri konteynerin ortasında hizalanacak boşluksuz -->
+    <div class="bg-info">Justify</div>
+    <div class="bg-danger">Content</div>
+    <div class="bg-success">Center</div>
+</div>
+<hr>
+<div class="d-flex justify-content-between">
+    <!-- Flex öğeleri konteyner içinde eşit aralıklarla yerleştirilecek (boşluksuz )-->
+    <div class="bg-info">Justify</div>
+    <div class="bg-danger">Content</div>
+    <div class="bg-success">Beetween</div>
+</div>
+<hr>
+<div class="d-flex justify-content-around">
+    <!-- Flex öğeleri konteyner etrafında eşit aralıklarla yerleştirilecek -->
+    <div class="bg-info">Justify</div>
+    <div class="bg-danger">Content</div>
+    <div class="bg-success">Around</div>
+</div>
+<hr>
+<div class="d-flex justify-content-evenly">
+    <!-- Flex öğeleri konteyner içinde eşit aralıklarla yerleştirilecek (boşluklar da dahil)-->
+    <div class="bg-info">Justify</div>
+    <div class="bg-danger">Content</div>
+    <div class="bg-success">evenly</div>
+</div>
+<hr>
+<hr>
+<hr>
+
+<!--
+align-items-start (başlangıç): Flex öğelerini başlangıç konumuna hizalar.
+
+align-items-end (son): Flex öğelerini son konumuna hizalar.
+
+align-items-center (ortala): Flex öğelerini konteynerin çapraz eksende ortasına hizalar.
+
+align-items-baseline (temel çizgi): Flex öğelerini temel çizgisi (baseline) üzerine hizalar.
+
+align-items-stretch (uzat): Tarayıcı varsayılanıdır. Flex öğelerini çapraz eksende gerer ve konteynerin
+yüksekliğine uzatır.-->
+<div class="d-flex align-items-start bg-primary" style="height:72px">
+    <div class="bg-info">Flex Item</div>
+    <div class="bg-danger">Flex Item</div>
+    <div class="bg-success">Flex Item</div>
+</div>
+<hr>
+<div class="d-flex align-items-end bg-primary" style="height:72px">
+    <div class="bg-info">Flex Item</div>
+    <div class="bg-danger">Flex Item</div>
+    <div class="bg-success">Flex Item</div>
+</div>
+<hr>
+<div class="d-flex align-items-center bg-primary" style="height:72px">
+    <div class="bg-info">Flex Item</div>
+    <div class="bg-danger">Flex Item</div>
+    <div class="bg-success">Flex Item</div>
+</div>
+<hr>
+<div class="d-flex align-items-baseline bg-primary" style="height:72px">
+    <div class="bg-info">Flex Item</div>
+    <div class="bg-danger">Flex Item</div>
+    <div class="bg-success">Flex Item</div>
+</div>
+<hr>
+<div class="d-flex align-items-stretch bg-primary" style="height:72px">
+    <div class="bg-info">Flex Item</div>
+    <div class="bg-danger">Flex Item</div>
+    <div class="bg-success">Flex Item</div>
+</div>
+<hr>
+
+<div class="d-flex" style="height: 72px">
+    <div class="bg-primary">Flex Item</div>
+    <div class="align-self-start bg-success">Aligned Flex Start</div>
+    <div class="bg-warning">Flex Item</div>
+</div>
+<hr>
+
+<div class="d-flex" style="height: 72px">
+    <div class="bg-primary">Flex Item</div>
+    <div class="bg-success align-self-end">Aligned Self End</div>
+    <div class="bg-warning">Flex Item</div>
+</div>
+<hr>
+
+<div class="d-flex" style="height: 72px">
+    <div class="bg-primary">Flex Item</div>
+    <div class="bg-success align-self-center">Aligned Self Center</div>
+    <div class="bg-warning">Flex Item</div>
+</div>
+<hr>
+
+<div class="d-flex" style="height: 72px">
+    <div class="bg-primary">Flex Item</div>
+    <div class="bg-success align-self-baseline">Aligned Self Baseline</div>
+    <div class="bg-warning">Flex Item</div>
+</div>
+<hr>
+
+<div class="d-flex" style="height: 72px">
+    <div class="bg-primary">Flex Item</div>
+    <div class="bg-success align-self-stretch">Aligned Self Strech</div>
+    <div class="bg-warning">Flex Item</div>
+</div>
+
+<hr>
+
+
+<div class="d-flex">
+    <!--
+    flex-fill -- sınıf, kardeş öğelerin genişliklerini içeriklerine eşit olacak şekilde (veya içerikleri
+    kutu sınırlarını aşmıyorsa eşit genişlikte) zorlamak için kullanılırken aynı zamanda tüm mevcut yatay
+    boşluğu kaplamasını sağlar.
+    -->
+    <div class="flex-fill bg-warning">Flex item with a lot of content</div>
+    <div class="flex-fill bg-success">Flex item</div>
+    <div class="flex-fill bg-primary">Flex item</div>
+</div>
+
+<hr>
+
+<div class="d-flex">
+    <!--
+    .flex-grow-1 sınıfı, birinci öğenin tüm mevcut boşluğu doldurabilmesini sağlar. Diğer iki öğe,
+    kendi gerekli boşluklarına sahiptir. Bu, birinci öğenin büyüyebilme yeteneğini temsil eder.
+    -->
+    <div class="flex-grow-1 bg-success">lorem</div>
+    <div class="bg-primary">Lorem</div>
+    <div class="bg-secondary">Iorem</div>
+</div>
+<hr>
+<div class="d-flex">
+    <!--
+    .flex-shrink-* sınıfları da mevcuttur ve bir öğenin boşluk daraltma yeteneğini kontrol etmek için kullanılır.
+    Bu sınıflar, bir öğenin küçülmesini belirli bir oranda sınırlayarak tasarımınızı optimize etmenize
+    yardımcı olabilir.
+    flex-shrink özelliği, bir flex öğesinin boyutunun, mevcut boşluğa sığmaması durumunda ne kadar
+    küçülebileceğini belirler
+    .flex-shrink-2 sınıfı, birinci öğenin diğer öğelere göre iki kat daha fazla küçülebileceğini belirtir
+    -->
+    <div class="bg-info w-100 flex-shrink-2">Lorem Ipsum</div>
+    <div class="bg-success">Lorem Ipsum</div>
+    <div class="bg-warning">Lorem Ipsum</div>
+</div>
+
+<hr>
+
+<div class="d-flex bg-info">
+    <div class="bg-primary">Flex Item</div>
+    <div class="bg-secondary">Flex Item</div>
+    <div class="bg-warning">Flex Item</div>
+</div>
+
+<hr>
+
+<div class="d-flex">
+    <!--
+    iki öğeyi sağa itme (me-auto sınıfı), ve iki öğeyi sola itme (ms-auto sınıfı).
+    Aynı şekilde, ms-auto sınıfı kullanılarak bir öğeyi sola itmek de mümkündür:
+
+    -->
+    <div class="bg-secondary me-auto">Flex Item</div>
+    <div class="bg-warning">Flex Item</div>
+    <div class="bg-danger">Flex Item</div>
+</div>
+
+<hr>
+
+<div class="d-flex">
+    <div class="bg-secondary">Flex Item</div>
+    <div class="bg-warning">Flex Item</div>
+    <div class="bg-danger ms-auto">Flex Item</div>
+</div>
+
+<hr>
+
+<div class="d-flex align-items-start flex-column" style="height: 120px; background-color: #a29bfe">
+    <div class="bg-primary mb-auto">Flex Item</div>
+    <div class="bg-secondary">Flex Item</div>
+    <div class="bg-warning">Flex Item</div>
+</div>
+
+<hr>
+
+<div class="d-flex align-items-end flex-column" style="height: 120px; background-color: #a29bfe">
+    <div class="bg-primary">Flex Item</div>
+    <div class="bg-secondary">Flex Item</div>
+    <div class="bg-warning mt-auto">Flex Item</div>
+</div>
+
+<hr>
+
+
+<div class="d-flex flex-nowrap gap-5">
+    <!--
+    Düz değil DEFAULT
+    -->
+    <div class="bg-warning">Flex Item</div>
+    <div class="bg-warning">Flex Item</div>
+    <div class="bg-warning">Flex Item</div>
+    <div class="bg-warning">Flex Item</div>
+    <div class="bg-warning">Flex Item</div>
+    <div class="bg-warning">Flex Item</div>
+    <div class="bg-warning">Flex Item</div>
+</div>
+
+<hr>
+
+<div class="d-flex flex-wrap gap-5">
+    <!--
+    Düz
+    -->
+    <div class="bg-danger">Flex Item</div>
+    <div class="bg-danger">Flex Item</div>
+    <div class="bg-danger">Flex Item</div>
+    <div class="bg-danger">Flex Item</div>
+    <div class="bg-danger">Flex Item</div>
+    <div class="bg-danger">Flex Item</div>
+    <div class="bg-danger">Flex Item</div>
+</div>
+<hr>
+
+<div class="d-flex flex-wrap-reverse gap-5">
+    <!--
+    Ters düz
+    -->
+    <div class="bg-info">Flex Item</div>
+    <div class="bg-info">Flex Item</div>
+    <div class="bg-info">Flex Item</div>
+    <div class="bg-info">Flex Item</div>
+    <div class="bg-info">Flex Item</div>
+    <div class="bg-info">Flex Item</div>
+    <div class="bg-info">Flex Item</div>
+</div>
+
+<hr class="p-0 m-0">
+
+<div class="d-flex align-content-start flex-wrap" style="height: 72px">
+    <div class="bg-danger">Align Content Start</div>
+    <div class="bg-warning">Align Content Start</div>
+    <div class="bg-secondary">Align Content Start</div>
+    <div class="bg-danger">Align Content Start</div>
+    <div class="bg-info">Align Content Start</div>
+    <div class="bg-success">Align Content Start</div>
+    <div class="bg-primary">Align Content Start</div>
+    <div class="bg-danger">Align Content Start</div>
+    <div class="bg-warning">Align Content Start</div>
+    <div class="bg-secondary">Align Content Start</div>
+    <div class="bg-success">Align Content Start</div>
+</div>
+
+<hr class="p-0 m-0">
+
+<div class="d-flex align-content-end flex-wrap" style="height: 72px">
+    <div class="bg-danger">Align Content End</div>
+    <div class="bg-warning">Align Content End</div>
+    <div class="bg-secondary">Align Content End</div>
+    <div class="bg-danger">Align Content End</div>
+    <div class="bg-info">Align Content End</div>
+    <div class="bg-success">Align Content End</div>
+    <div class="bg-primary">Align Content End</div>
+    <div class="bg-danger">Align Content end</div>
+    <div class="bg-warning">Align Content End</div>
+    <div class="bg-secondary">Align Content End</div>
+    <div class="bg-success">Align Content End</div>
+</div>
+
+<hr class="p-0 m-0">
+
+<div class="d-flex align-content-center flex-wrap" style="height: 72px">
+    <div class="bg-danger">Align Content Center</div>
+    <div class="bg-warning">Align Content Center</div>
+    <div class="bg-secondary">Align Content Center</div>
+    <div class="bg-danger">Align Content Center</div>
+    <div class="bg-info">Align Content Center</div>
+    <div class="bg-success">Align Content Center</div>
+    <div class="bg-primary">Align Content Center</div>
+    <div class="bg-danger">Align Content Center</div>
+    <div class="bg-warning">Align Content Center</div>
+    <div class="bg-secondary">Align Content Center</div>
+    <div class="bg-success">Align Content Center</div>
+</div>
+<hr class="p-0 m-0">
+
+<div class="d-flex align-content-around flex-wrap" style="height: 72px">
+    <div class="bg-danger">Align Content Around</div>
+    <div class="bg-warning">Align Content Around</div>
+    <div class="bg-secondary">Align Content Around</div>
+    <div class="bg-danger">Align Content Around</div>
+    <div class="bg-info">Align Content Around</div>
+    <div class="bg-success">Align Content Around</div>
+    <div class="bg-primary">Align Content Around</div>
+    <div class="bg-danger">Align Content Around</div>
+    <div class="bg-warning">Align Content Aroundr</div>
+    <div class="bg-secondary">Align Content Around</div>
+    <div class="bg-success">Align Content Around</div>
+</div>
+
+<hr class="p-0 m-0">
+
+<div class="d-flex align-content-stretch flex-wrap" style="height: 72px">
+    <div class="bg-danger">Align Content Strecht</div>
+    <div class="bg-warning">Align Content Strecht</div>
+    <div class="bg-secondary">Align Content Strecht</div>
+    <div class="bg-danger">Align Content Strecht</div>
+    <div class="bg-info">Align Content Strecht</div>
+    <div class="bg-success">Align Content Strecht</div>
+    <div class="bg-primary">Align Content Strecht</div>
+    <div class="bg-danger">Align Content Strecht</div>
+    <div class="bg-warning">Align Content Strecht</div>
+    <div class="bg-secondary">Align Content Strecht</div>
+    <div class="bg-success">Align Content Strecht</div>
+</div>
+
+</body>
+</html>
