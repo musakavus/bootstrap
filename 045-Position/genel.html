@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Genel</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!--
+position-static: Öğeyi normal konumda bırakır (default).
+
+position-relative: Öğeyi, kendisi içinde normal konumda yerleştirir ve bu konuma göre pozisyonunu ayarlar.
+
+position-absolute: Öğeyi belirtilen üst, sağ, alt veya sol kenarlara göre konumlandırır. Ancak, bu öğe, pozisyonu
+belirlenen en yakın pozisyonlu (positioned) üst öğe içinde konumlanır. Eğer üst öğe yoksa, belge (document)
+içinde konumlanır.
+
+position-fixed: Öğeyi görünen pencerenin içinde belirtilen üst, sağ, alt veya sol kenarlara göre sabitler.
+Sayfanın herhangi bir yere kaydırılsa bile öğe ekranda sabitlenir.
+
+position-sticky: Öğeyi kullanıcının ekranını kaydırdığı noktaya göre konumlandırır. Diğer bir deyişle,
+bir belirli noktaya kadar normal bir akış içinde hareket eder, ancak bu noktadan sonra sabitlenir.
+-->
+
+<!--
+position: static; (Varsayılan Değer):
+Öğeler, normal akışta (normal flow) bulunur ve diğer öğeler tarafından etkileşmez.
+top, right, bottom, ve left özellikleri bu durumda etkisizdir.
+-->
+
+<!--
+position: relative;:
+Öğe, normal akış içinde kalır, ancak top, right, bottom, ve left özellikleri ile kendine göre bir konumlandırma yapılabilir.
+Kendi içinde hareket eder, ancak diğer öğeleri etkilemez.
+-->
+
+<!--
+position: absolute;:
+Öğe, normal akıştan çıkarak en yakın pozisyonlu (positioned) üst öğenin içinde konumlanır.
+Eğer üst öğe yoksa, belge içinde konumlanır.
+top, right, bottom, ve left özellikleri ile konumlandırma yapılır.
+-->
+
+<!--
+position: sticky;:
+Öğe, belirlenen bir eşiğe (threshold) kadar normal akış içinde hareket eder, ardından sabitlenir.
+Eşik değeri genellikle top, right, bottom, veya left özellikleriyle belirlenir.
+Sabitlenen öğe, scroll edildikçe ekranın kenarına yapışır.
+-->
+
+<!--
+position: fixed;:
+Öğe, belirtilen top, right, bottom, veya left değerlerine göre, ekranın belirli bir konumunda sabitlenir.
+Scroll edilse bile ekrandaki yerini korur.
+-->
+
+<div class="position-relative" style="height: 300px; background-color: #eb4d4b; color: black">
+    <div class="position-absolute top-0 start-0">X</div>
+    <div class="position-absolute top-50 start-0">X</div>
+    <div class="position-absolute bottom-0 start-0">X</div>
+</div>
+<br>
+<br>
+<br>
+<div class="position-relative" style="height: 300px; background-color: #eb4d4b; color: black">
+    <div class="position-absolute bottom-0 start-0">X</div>
+    <div class="position-absolute bottom-50 start-0">X</div>
+    <div class="position-absolute start-0 start-0">X</div>
+</div>
+<br>
+<br>
+<br>
+<div class="position-relative" style="height: 300px; background-color: #eb4d4b; color: black">
+    <div class="position-absolute bottom-0 start-50">X</div>
+    <div class="position-absolute bottom-50 start-50">X</div>
+    <div class="position-absolute start-0 start-50">X</div>
+</div>
+<br>
+<br>
+<br>
+<div class="position-relative" style="height: 300px; background-color: #eb4d4b; color: black">
+    <div class="position-absolute top-0 start-50">X</div>
+    <div class="position-absolute top-50 start-50">X</div>
+    <div class="position-absolute bottom-0 start-50">X</div>
+</div>
+<br>
+<br>
+<br>
+<div class="position-relative" style="height: 300px; background-color: #eb4d4b; color: black">
+    <div class="position-absolute bottom-100 start-100">X</div>
+</div>
+<br>
+<br>
+<br>
+<button class="btn btn-primary position-relative">
+    Button
+    <span class="badge bg-secondary rounded-pill position-absolute top-0 start-100 translate-middle">+99</span>
+</button>
+<br>
+<br>
+<br>
+<span class="bg-secondary rounded-5 py-2 px-3 text-white position-relative">Marker<svg style="background-color: #6C757D"
+                                                                                       xmlns="http://www.w3.org/2000/svg"
+                                                                                       width="16"
+                                                                                       height="16" fill="currentColor"
+                                                                                       class="bi bi-caret-down-square position-absolute top-100 translate-middle start-50 border border-0"
+                                                                                       viewBox="0 0 16 16">
+  <path d="M3.626 6.832A.5.5 0 0 1 4 6h8a.5.5 0 0 1 .374.832l-4 4.5a.5.5 0 0 1-.748 0l-4-4.5z"/>
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+</svg></span>
+
+<br>
+<br>
+<br>
+<button class="btn btn-primary position-relative">
+    Alerts <span
+        class="badge position-absolute  translate-middle start-100 border border-light rounded-circle bg-danger p-2"><span
+        class="visually-hidden">unread messages</span></span>
+</button>
+<br>
+<br>
+<br>
+
+<div style="background-color: #0a53be; height: 200px; width: 750px; position: relative">
+    <button class="position-absolute">Position Absolute 0</button>
+    <button class="position-relative">Position Relative 1</button>
+
+    <button class="position-relative">Position Relative 2</button>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</html>
